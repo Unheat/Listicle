@@ -21,6 +21,11 @@ The following **required** functionality is completed:
 - [x] **The web app serves an appropriate 404 page when no matching route is defined**
 - [x] **The web app is styled using Picocss**
 
+# Project 2 features:
+- [x]  connect to Postgresql
+- [x]  changning route and write script to populate the database
+- [x]  the front-end display database content 
+
 The following **optional** features are implemented:
 
 - [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
