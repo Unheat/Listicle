@@ -2,7 +2,7 @@ import express from 'express'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import patterns from '../data/patterns.js'
-
+import getPatterns from '../controllers/patterns.js'
 const __filename = fileURLToPath(import.meta.url) //  The import.meta.url is a special property that contains the URL of the current module file
 const __dirname = path.dirname(__filename)
 
