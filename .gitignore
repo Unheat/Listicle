@@ -30,5 +30,5 @@ Thumbs.db
 
 # Ignore markdown if you only want source docs excluded
 *.md
-
+docs/
 !README.md

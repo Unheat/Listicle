@@ -1,7 +1,7 @@
 import express from 'express'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import patterns from '../data/patterns.js'
+// import patterns from '../data/patterns.js'
 import getPatterns from '../controllers/patterns.js'
 const __filename = fileURLToPath(import.meta.url) //  The import.meta.url is a special property that contains the URL of the current module file
 const __dirname = path.dirname(__filename)
@@ -22,9 +22,10 @@ Result: /Users/AnDang/project/server.js
 const router = express.Router()
 
 
-router.get('/', (req, res) => { //if enter home return 
-  res.status(200).json(patterns)
-})
+// router.get('/', (req, res) => { //if enter home return 
+//   res.status(200).json(patterns)
+// })
+router.get('/', getPatterns)
 
 router.get('/:patternId', (req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, '../public/pattern.html'))
